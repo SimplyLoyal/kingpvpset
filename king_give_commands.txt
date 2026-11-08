@@ -1,0 +1,18 @@
+# King PvP gear - give commands (Minecraft 26.2, diamond base)
+# Only items with the item_model tag use the custom texture. Normal diamond gear stays vanilla.
+# Change @p to a player name, or use %player% inside Skript.
+
+/give @p diamond_sword[item_model='myserver:king_sword',item_name={text:"King's Blade",color:'gold',italic:false}]
+/give @p diamond_axe[item_model='myserver:king_axe',item_name={text:"King's Axe",color:'gold',italic:false}]
+/give @p diamond_pickaxe[item_model='myserver:king_pickaxe',item_name={text:"King's Pickaxe",color:'gold',italic:false}]
+/give @p mace[item_model='myserver:king_mace',item_name={text:"King's Mace",color:'gold',italic:false}]
+
+/give @p diamond_helmet[item_model='myserver:king_helmet',equippable={slot:'head',asset_id:'myserver:king'},item_name={text:"King's Crown",color:'gold',italic:false}]
+/give @p diamond_chestplate[item_model='myserver:king_chestplate',equippable={slot:'chest',asset_id:'myserver:king'},item_name={text:"King's Chestplate",color:'gold',italic:false}]
+/give @p diamond_leggings[item_model='myserver:king_leggings',equippable={slot:'legs',asset_id:'myserver:king'},item_name={text:"King's Leggings",color:'gold',italic:false}]
+/give @p diamond_boots[item_model='myserver:king_boots',equippable={slot:'feet',asset_id:'myserver:king'},item_name={text:"King's Boots",color:'gold',italic:false}]
+
+/give @p elytra[item_model='myserver:king_elytra',equippable={slot:'chest',asset_id:'myserver:king_wings'},item_name={text:"King's Cape",color:'gold',italic:false}]
+
+# In Skript, the names contain double quotes, so use plain names instead (no apostrophe), like:
+# execute console command "give %player% diamond_sword[item_model='myserver:king_sword',item_name={text:'King Blade',color:'gold',italic:false}]"
